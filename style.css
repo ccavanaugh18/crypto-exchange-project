@@ -1,64 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+	background-color: black;
+  }
 
-html {
-	font-family: 'Heebo', 'sans-serif';
-	font-size: 10px;
+#hero {
+	width: 100%;
+	height: 125px;
 }
-
-#hero .background-image {
-	position: absolute;
-	top: 0;
-	left: 0;
+  
+#hero .hero-banner {
 	width: 100%;
 	height: 100%;
-	background-image: url('assets/hero.png');
-	background-position: center;
-	background-size: cover;
-	transform: scaleX(-1);
-	z-index: -1; 
-  }
-  
-  #hero .hero-container {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-}
-
-#hero .hero-content {
-	color: white;
-	width: 80%;
-	flex-direction: column;
-	justify-content: center;
+	background-color: black;
+	display: flex;
 	align-items: center;
-	margin: 25vh auto;
-	padding: 20px;
 }
-
-#hero a {
-	text-decoration: none;
-}
-
-#hero .hero-content h1 {
-	font-size: 7rem;
-	margin-bottom: 3%;
-}
-
-#hero .hero-content p {
-	font-size: 4rem;
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-#hero .hero-content .cta {
+  
+#hero .hero-banner h1 {
 	font-size: 3rem;
+	margin: 0;
+	padding: 20px;
 	color: white;
-	outline: 2px solid white;
-	padding: 8px 16px;
-	display: inline-block;
+}
+  
+#hero .hero-banner nav {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
+  
+#hero .hero-banner nav ul {
+	list-style-type: none;
+	margin: 0;
+	margin-right: 10vw;
+	padding: 0;
+	display: flex;
+}
+  
+#hero .hero-banner nav ul li {
+	margin: 0 50px;
+}
+  
+#hero .hero-banner nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+#home {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#home .home-container {
+	max-width: 80%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 20%;
+}
+
+#home .home-container .text {
+	display: flex;
+	flex-direction: column;
+}
+
+#home .home-container h2 {
+	color: white;
+	font-size: 2.5rem;
+}
+
+#home .home-container p {
+	color: white;
+	font-size: 1.5rem;
+}
+
+#home .background-image img {
+	max-width: 100%;
+	height: auto;
+	z-index: 1;
 }

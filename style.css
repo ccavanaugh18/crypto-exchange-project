@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	margin: 0;
@@ -12,7 +13,7 @@ body {
 	height: 125px;
 }
   
-#hero .hero-banner {
+.hero-banner {
 	width: 100%;
 	height: 100%;
 	background-color: #8460e7;
@@ -20,14 +21,14 @@ body {
 	align-items: center;
 }
   
-#hero .hero-banner h1 {
+.hero-banner h1 {
 	font-size: 3rem;
 	margin: 0;
 	padding: 20px;
 	color: white;
 }
   
-#hero .hero-banner nav {
+.hero-banner nav {
 	flex-grow: 1;
 	display: flex;
 	align-items: center;
@@ -35,7 +36,7 @@ body {
 	padding: 10px 20px;
 }
   
-#hero .hero-banner nav ul {
+.hero-banner nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -43,20 +44,20 @@ body {
 	padding: 10px 20px;
 }
   
-#hero .hero-banner nav ul li {
+.hero-banner nav ul li {
 	margin: 0 50px;
 	width: 200px;
 	padding: 10px 20px;
 }
   
-#hero .hero-banner nav ul li a {
+.hero-banner nav ul li a {
 	text-decoration: none;
 	color: white;
 	font-size: 1.5rem;
 	padding: 10px 20px;
 }
 
-#hero .hero-banner nav ul li a:hover {
+.hero-banner nav ul li a:hover {
 	background-color: #542cc7;
 	color: white;
 	padding: 10px 20px;
@@ -69,62 +70,61 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: top;
 }
 
-#home .home-container {
+.home-container {
 	width: 80%;
-	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin-bottom: 3%;
 }
 
-#home .home-container .home-text {
+.home-text {
 	width: 50%;
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	margin-top: 5%;
 	padding: 20px;
 }
 
-#home .home-container .home-text h2 {
+.home-text h2 {
 	color: white;
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
-#home .home-container .home-text p {
+.home-text p {
 	color: white;
 	font-size: 2rem;
 }
 
-#home .home-container .home-text .cta {
+.home-text .cta {
 	max-width: 40%;
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 20px 40px;
 	color: white;
 	background-color: transparent;
 	border: 3px solid #8460e7;
-	border-radius: 30px;
+	border-radius: 40px;
 	font-size: 2rem;
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-top: 30px;
+	margin-bottom: 10%;
 	text-align: center;
 	transition: .3 ease; 
 	transition-property: background-color, color;
 }
-#home .home-container .home-text .cta:hover {
+.home-text .cta:hover {
 	color: white;
 	background-color: #8460e7;
 }
 
-#home .home-container .background-image {
+.background-image {
 	width: 50%;
 }
-#home .home-container .background-image img {
+
+.background-image img {
 	max-width: 100%;
 	height: auto;
 	z-index: 1;
@@ -132,72 +132,104 @@ body {
 
 #market {
 	width: 100%;
-	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
-#market .market-container {
+.market-container {
 	width: 80%;
 	height: auto;
-	padding: 50px;
+	padding: 20px;
 }
 
-#market .market-container .market-text {
-	margin-left: 10%;
+.market-text {
 	color: white;
+	padding: 20px;
+	text-align: center;
 }
 
-#market .market-container .market-text h2 {
+.market-text h2 {
 	font-size: 2.5rem;
 }
 
-#market .market-container .market-text p {
+.market-text p {
 	font-size: 1.5rem;
 }
 
 #choose-us {
 	width: 100%;
-	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
-#choose-us .choose-container {
+.choose-container {
 	width: 80%;
 	height: auto;
-	padding: 50px;
+	padding: 20px;
 }
 
-#choose-us .choose-container .choose-text {
-	margin-left: 10%;
+.choose-text {
 	color: white;
+	padding: 20px;
+	text-align: center;
 }
 
-#choose-us .choose-container .choose-text h2 {
+.choose-text h2 {
 	font-size: 2.5rem;
 }
 
-#choose-us .choose-container .choose-text p {
+.choose-text p {
 	font-size: 1.5rem;
 }
 
 #join {
 	width: 100%;
-	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
-#join .join-container {
+.join-container {
 	width: 80%;
 	height: auto;
-	padding: 50px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
 }
 
-#join .join-container .join-text {
-	margin-left: 10%;
+.join-text {
 	color: white;
+	padding: 20px;
+	text-align: center;
 }
 
-#join .join-container .join-text h2 {
+.join-text h2 {
 	font-size: 2.5rem;
 }
 
-#join .join-container .join-text p {
+.join-text p {
 	font-size: 1.5rem;
+}
+
+#footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-container {
+	width: 100%;
+	height: auto;
+	padding: 40px;
+}
+
+.footer-media {
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(15%);
+}
+
+.footer-media img {
+	width: 25%;
+	height: auto;
 }

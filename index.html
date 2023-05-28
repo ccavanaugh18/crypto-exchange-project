@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<title>CryptoFlow modern trading</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+	integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+	crossorigin="anonymous"></script>
 </head>
 <body>
 	<section id="hero">
@@ -21,13 +26,37 @@
 	<section id="home">
 			<div class="home-container">
 				<div class="home-text">
-					<h2>Trade Crypto like never before</h2>
+					<h2>Trade <span>Crypto</span> like never before</h2>
 					<p>Lower fees, shorter wait times, and better customer service all in one easy to use platform.</p>
 					<a href="#market" class="cta">Start Trading</a>
-					<p>This text will be replaced with a few popular coins and their values whenever the api is implemented.</p>
 				</div>
 				<div class="background-image">
-					<img src="assets/home-background.png" alt="Background Image">
+					<img src="home-background.png" alt="Background Image">
+				</div>
+				<div class="coin-section">
+					<div class="coin-list">
+						<div class="coin">
+							<img src="bitcoin.png">
+							<div>
+								<h3>$<span id="bitcoin"></span></h3>
+								<p>Bitcoin</p>
+							</div>
+						</div>
+						<div class="coin">
+							<img src="ethereum.png">
+							<div>
+								<h3>$ <span id="ethereum"></span></h3>
+								<p>Ethereum</p>
+							</div>
+						</div>
+						<div class="coin">
+							<img src="dogecoin.png">
+							<div>
+								<h3>$<span id="dogecoin"></span></h3>
+								<p>Dogecoin</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 	</section>
@@ -42,16 +71,21 @@
 	<section id="choose-us">
 		<div class="choose-container">
 			<div class="choose-text">
-				<h2>Choose Us</h2>
-				<p>Why choose us section.</p>
+				<h2>Why Choose <span>Us?</span></h2>
+				<p>We have revolutionized the way you engage with digital assets. With our state-of-the-art platform, we offer a comprehensive 
+				suite of tools and services designed to empower both seasoned traders and newcomers alike. CryptoFlow provides real-time, 
+				accurate tracking of a vast array of cryptocurrencies, ensuring you stay informed about the latest market trends and price 
+				movements. Our intuitive and user-friendly interface simplifies the trading process, allowing you to buy, sell, and manage 
+				your digital assets with ease.</p>
 			</div>
 		</div>
 	</section>
 	<section id="join">
 		<div class="join-container">
 			<div class="join-text">
-				<h2>Join</h2>
-				<p>Join Discord</p>
+				<h2>Join <span>Us</span></h2>
+				<p>Our Discord server is one of the fastest growing Crypto communities. Connect with other traders, find out about market
+				trends, ask questions and much more.</p>
 			</div>
 		</div>
 	</section>
@@ -59,8 +93,8 @@
 	<section id="footer">
 		<footer class="footer-container">
 			<div class="footer-media">
-				<img src="assets/chest.png" alt="Footer Chest Image">
-				<img src="assets/wallet.png" alt="Footer Wallet Image">
+				<img src="chest.png" alt="Footer Chest Image">
+				<img src="wallet.png" alt="Footer Wallet Image">
 			</div>
 		</footer>
 	</section>

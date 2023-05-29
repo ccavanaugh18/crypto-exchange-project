@@ -10,7 +10,7 @@ body {
 
 #hero {
 	width: 100%;
-	height: 125px;
+	height: 100px;
 }
   
 .hero-banner {
@@ -180,6 +180,10 @@ body {
 	width: 80%;
 	height: auto;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .market-text {
@@ -192,8 +196,13 @@ body {
 	font-size: 3rem;
 }
 
-.market-text p {
-	font-size: 2rem;
+.market-text h2 span {
+	color:#8460e7;
+}
+
+.market-list {
+	width: 80%;
+	height: 530px;
 }
 
 #choose-us {

@@ -5,4 +5,4 @@ It also has an api from CoinGeko and TradingView to fetch the information about 
 
 ## Demo
 
-<https://ccavanaugh18.github.io/crypto-exchange-project/>{:target="_blank"}
+<a href="https://ccavanaugh18.github.io/crypto-exchange-project/" target="_blank">Visit the Demo</a>
